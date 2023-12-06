@@ -6,8 +6,8 @@ import pyfiglet
 from termcolor import colored
 
 def envoyer_email(adresse_expediteur, mot_de_passe, adresse_destinataire, nom_expediteur, sujet, message):
-    serveur_smtp = 'smtp-relay.brevo.com'
-    port_smtp = 587
+    serveur_smtp = 'Serveur'
+    port_smtp = 0.0.0.0
 
     msg = MIMEMultipart()
     msg['From'] = f'{nom_expediteur} <{adresse_expediteur}>'
